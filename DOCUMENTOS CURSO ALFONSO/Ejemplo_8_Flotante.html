@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flotante</title>
+    <style>
+        main {
+            width: 800px;
+            height: 450px;
+            background-color: blueviolet;
+        }
+
+        p {
+            width: 200px;
+            height: 100px;
+            background-color: aqua;
+            float: left;
+             margin-left: 5px;
+            border: 5px solid blue; /*Probar con 2pxs*/
+        }
+        p:nth-last-of-type(2){
+            box-shadow: 2px 2px 0px blue;
+            clear:right; /*probar con left*/
+        }
+        
+
+    </style>
+</head>
+
+<body>
+    <main>
+        <p>Párrafo1</p>
+        <p>Párrafo2</p>
+        <p>Párrafo3</p>
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        form[method="get"] {
+            background-color: rgb(134, 207, 181);
+        }
+
+        form[method="post"] {
+            background-color: pink;
+            font-size: 20px;
+        }
+
+        form {
+            width: 300px;
+            color: orange;
+        }
+
+
+        input[value] {
+            border: 2px solid blue;
+            color: orange;
+        }
+
+        form {
+            color: red !important;
+        }
+
+
+        /*Raúl, quiero cambiar el color de fuente del submit azul*/
+
+        input[name="azul"]+input[value] {
+            border: 1px solid red;
+        }
+
+        input[name="azul"]+br+input[value] {
+            border: 1px solid red;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="#" method="get">
+        <fieldset>
+            <legend>Añadir a cesta</legend>
+            <label for="">Café Azul</label><br>
+            <input type="number" name="Azul" id="Azul"><br>
+            <input type="submit" value="OK">
+        </fieldset>
+
+    </form>
+    <form action="#" method="post">
+        <fieldset>
+            <legend>Añadir a Cesta</legend>
+            <label for="rojo">Café Rojo</label><br>
+            <input type="number" name="rojo" id="rojo"><br>
+            <input type="submit" value="OK">
+
+        </fieldset>
+    </form>
+
+</body>
+
+</html>

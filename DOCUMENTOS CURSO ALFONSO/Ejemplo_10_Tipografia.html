@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tipografía</title>
+    <style>
+        p:first-of-type {
+            /*Propiedades de fuentes*/
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 1.2em; /* 1.2 significa 20%mayor que el tamaño base*/
+            font-weight: 100; /* Grosor*/
+            font-style: italic; /* Curso*/
+            font-variant: small-caps; /* Versalitas*/
+            font-stretch: condensed; /* Separación de fuente*/
+        }
+
+        p:nth-of-type(2) {
+            text-align: justify; /* left, center, right, justify*/
+            line-height: 15px; /* Interlineado*/
+            text-decoration: underline; /*Subrayado, sobrerayado, tachado*/
+            text-decoration-color: blue;
+            text-decoration-style: dashed;
+            text-transform: capitalize; /*1ra letra palabra MAYUS*/
+            text-indent: 20px; /*Sangría primera línea*/
+            letter-spacing: 3px; /*Espaciado entre letras*/
+            word-spacing: 10px; /*Espacio entre palabras*/
+            text-shadow: 2px 2px  5px green; /* 1er px=horizontal,2do px=vertical,3ro px=difuminado,color es box-shadow+color*/
+            text-align-last:right; /*Alineación de última línea*/
+            text-emphasis: "👶"
+            text-emphasis: under;
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <p>
+        La propiedad font permite establecer de una sola vez los valores
+        para todas las propiedades:font-style, font-variant,font-weight,
+        font-size, line-height y font-family en una hoja de estilo.
+    </p>
+    <p>
+        El fontla propiedad puede ser especificada como una sola palabra clave,
+        que seleccionará una fuente del sistema, o como abreviatura para varias
+        propiedades relacionadas con la fuente.
+
+        Si fontse especifica como una palabra clave del sistema, debe ser una de:
+        caption, icon, menu, message-box, small-caption, status-bar.
+    </p>
+</body>
+
+</html>

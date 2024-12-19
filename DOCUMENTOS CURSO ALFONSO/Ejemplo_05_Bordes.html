@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bordes</title>
+    <style>
+        p {
+            width: 25%;
+            height: 30px;
+            background: rgb(85, 153, 153);
+            color: white;
+            border: 5px solid black;
+        }
+
+        p:first-child,
+        {
+        border-width: 10px;
+        }
+
+        article p:nth-child(2) {
+            border-color: blue;
+        }
+
+        /*Segundo párrafo hijo de article empezando por el último*/
+
+        article p:nth-last-child(2) {
+            border-style: dotted; /*dotted es Punteado*/
+            border-style: dashed; /*dashed para Rayas*/
+            border-style: double; /*double es Línea doble*/
+        }
+        article p:last-child{
+            border-style: groove; /*Grabado*/
+            border-style: ridge; /*Relieve*/ 
+            border-style:inset; /*        */
+            border-style:outset; /*Monto por el cual se extenderá la imagen de borde más allá del límite de la caja*/
+        }
+
+    </style>
+</head>
+
+<body>
+    <article>
+        <p>Párrafo 1</p>
+        <p>Párrafo 2</p>
+        <p>Párrafo 3</p>
+        <p>Párrafo 4</p>
+    </article>
+
+
+</body>
+
+</html>

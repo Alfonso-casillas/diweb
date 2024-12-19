@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posicionamiento</title>
+    <style>
+        /*Formateado de la página*/
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1em;
+            padding: 0px;
+            margin: 10px;
+        }
+
+        main {
+            background-color:orange;
+            padding: 10px;
+            width: 50px;
+            position: relative;
+            top: 100px
+        }
+
+        section:first-of-type {
+            background-color: green;
+            position: static;
+        }
+
+        section:nth-of-type(2) {
+        background-color: yellow;
+        position:relative ;
+        top: 50px;
+        left: 50px;
+
+
+        }
+
+        section:nth-of-type(3) {
+            background-color: violet;
+            position:absolute ;
+            top: 50px;
+            left: 50px;
+
+        }
+        section:nth-of-type(4) {
+            background-color: brown;
+            position: sticky;
+            bottom: 20px;
+        }
+        
+        h1{
+            position: fixed;
+            background-color: white;
+            z-index: 1;
+        } 
+        nav{
+            position: fixed;
+            background-color: white;
+            z-index: 1;
+        }
+
+    </style>
+</head>
+
+<body>
+    <h1>Posicionamiento</h1>
+    <nav>Barra de Navegación</nav>
+    <main>
+        <section>
+            <h2>static</h2>
+            <article>Posicionamiento normal o estático: se trata del posicionamiento que utilizan los
+                navegadores si no se indica lo contrario.</article>
+        </section>
+        <section>
+            <h2>relative</h2>
+            <article>Posicionamiento relativo: variante del posicionamiento normal que consiste en
+                posicionar una caja según el posicionamiento normal y después desplazarla respecto
+                de su posición original.
+            </article>
+        </section>
+        <section>
+            <h2>absolute</h2>
+            <article>Posicionamiento absoluto: la posición de una caja se establece de forma absoluta
+                respecto de su elemento contenedor y el resto de elementos de la página ignoran la
+                nueva posición del elemento.
+            </article>
+        </section>
+        <section>
+            <h2>sticky</h2>
+            <article>
+                El elemento es posicionado de acuerdo al flujo normal del documento, 
+                y luego es desplazado con relación a su ancestro que se desplace más cercano 
+                y su bloque contenedor (ancestro en nivel de bloque más cercano) incluyendo 
+                elementos relacionados a tablas, basados en los valores de top, right, bottom, y left.
+                 El desplazamiento no afecta la posición de ningún otro elmento.
+            </article>
+        </section>
+    </main>
+
+</body>
+
+
+</html>
